@@ -48,10 +48,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
-# This is probably uneeded (Might Remove Later)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/system/bin/hci_qcomm_init:system/bin/hci_qcomm_init
-
 # Some of LG stock notification sounds
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/system/media/audio/alarms/LG_Alarm_1.ogg:system/media/audio/alarms/LG_Alarm_1.ogg \
