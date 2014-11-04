@@ -996,7 +996,7 @@ service vpnclientpm /system/bin/vpnclientpm3 \
 
 service wcnss-service /system/bin/wcnss_service
     class main
-    user system
+    user root
     group system wifi qcom_diag radio
     oneshot
 
