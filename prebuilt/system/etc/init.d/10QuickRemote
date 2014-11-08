@@ -1,0 +1,19 @@
+#!/system/bin/sh
+
+#open access to IR for all apps
+chmod 666 /dev/ttyHSL1
+
+#try to set target country
+country=$(getprop persist.sys.country)
+setprop ro.build.target_country $country
+
+#set operator
+device=$(getprop ro.product.device)
+operator="OPEN"
+if grep -qi 800 <<<$device; then
+    operator="ATT"
+fi
+if grep -qi vs <<<$device; then
+    operator="VZW"
+fi
+setprop ro.build.target_operator $operator
