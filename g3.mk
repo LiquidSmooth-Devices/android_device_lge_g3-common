@@ -101,7 +101,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/system/media/audio/ui/IR_normal.ogg:system/media/audio/ui/IR_normal.ogg \
     $(LOCAL_PATH)/prebuilt/system/etc/init.d/10QuickRemote:system/etc/init.d/10QuickRemote \
     $(LOCAL_PATH)/prebuilt/system/app/LGQRemote.apk:system/app/LGQRemote.apk \
-    $(LOCAL_PATH)/prebuilt/system/app/QuicksetSDK.apk:system/app/LGQRemote.apk \
+    $(LOCAL_PATH)/prebuilt/system/app/QuicksetSDK.apk:system/app/QuicksetSDK.apk \
     $(LOCAL_PATH)/prebuilt/system/addon.d/80-quickremote.sh:system/addon.d/80-quickremote.sh
 
 # System properties
