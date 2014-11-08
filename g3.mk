@@ -247,14 +247,6 @@ PRODUCT_PACKAGES += \
     init.galbi.usb.sh \
     ueventd.g3.rc
 
-PRODUCT_PACKAGES += \
-    init.galbi.post_boot.sh \
-    init.galbi.thermal_conf.sh
-
-# Thermal
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
-
 # Torch
 PRODUCT_PACKAGES += \
     Torch
@@ -262,6 +254,10 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
+
+# Thermal
+PRODUCT_PACKAGES += \
+    init.galbi.thermal_conf.sh
 
 # Wifi
 PRODUCT_PACKAGES += \
